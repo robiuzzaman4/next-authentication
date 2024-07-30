@@ -1,15 +1,13 @@
-import { Button } from "@/components/ui/button";
 import React from "react";
 
-const Home = () => {
+const ProfilePage = () => {
   return (
     <div className="w-full max-w-screen-lg mx-auto pt-24 pb-16">
       <h1 className="text-3xl font-semibold tracking-tighter">
-        This is Home Page
+        This is Profile Page
       </h1>
-      <Button>Click me</Button>
     </div>
   );
 };
 
-export default Home;
+export default ProfilePage;
