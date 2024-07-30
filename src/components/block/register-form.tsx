@@ -16,7 +16,7 @@ import {
 import { Input } from "../ui/input";
 
 const FormSchema = z.object({
-  name: z.string().min(4, {
+  fullname: z.string().min(4, {
     message: "Full Name must be at least 4 characters.",
   }),
   username: z.string().min(2, {
@@ -30,7 +30,7 @@ const RegisterForm = () => {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      name: "",
+      fullname: "",
       username: "",
       password: "",
     },
@@ -49,7 +49,7 @@ const RegisterForm = () => {
           {/* name */}
           <FormField
             control={form.control}
-            name="name"
+            name="fullname"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
