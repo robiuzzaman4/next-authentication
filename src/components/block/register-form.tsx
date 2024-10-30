@@ -36,8 +36,15 @@ const RegisterForm = () => {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof FormSchema>) => {
+  const onSubmit = async (data: z.infer<typeof FormSchema>) => {
     console.log("data", data);
+
+    try {
+      
+    } catch (error) {
+      console.log("error", error);
+      
+    }
   };
   return (
     <div className="w-full p-4 rounded-md border border-border">

@@ -11,10 +11,10 @@ const links = [
     href: "/login",
     label: "Login",
   },
-  {
-    href: "/register",
-    label: "Register",
-  },
+  // {
+  //   href: "/register",
+  //   label: "Register",
+  // },
 ];
 
 const AuthTab = () => {
